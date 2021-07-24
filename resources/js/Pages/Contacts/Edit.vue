@@ -39,11 +39,11 @@
 </template>
 
 <script>
-import Layout from '@/Shared/Layout'
 import TextInput from '@/Shared/TextInput'
 import SelectInput from '@/Shared/SelectInput'
 import LoadingButton from '@/Shared/LoadingButton'
 import TrashedMessage from '@/Shared/TrashedMessage'
+import ModalDialog from '@/Shared/ModalDialog'
 
 export default {
   metaInfo() {
@@ -57,7 +57,7 @@ export default {
     TextInput,
     TrashedMessage,
   },
-  layout: Layout,
+  layout: ModalDialog,
   props: {
     contact: Object,
     organizations: Array,

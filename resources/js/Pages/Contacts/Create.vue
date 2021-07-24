@@ -34,10 +34,10 @@
 </template>
 
 <script>
-import Layout from '@/Shared/Layout'
 import TextInput from '@/Shared/TextInput'
 import SelectInput from '@/Shared/SelectInput'
 import LoadingButton from '@/Shared/LoadingButton'
+import ModalDialog from '@/Shared/ModalDialog'
 
 export default {
   metaInfo: { title: 'Create Contact' },
@@ -46,7 +46,7 @@ export default {
     SelectInput,
     TextInput,
   },
-  layout: Layout,
+  layout: ModalDialog,
   props: {
     organizations: Array,
   },
